@@ -9,3 +9,4 @@ let length list =
     | _::xs -> step (acc + 1) xs
   in
   step 0 list
+(*Erkenntnis: Eine interne Funktionsdefinition und Deklaration muss mit einem in versehen werden, damit sie verwendet werden kann (siehe Zeile vor step-aufruf*)
